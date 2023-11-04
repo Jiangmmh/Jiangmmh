@@ -6,7 +6,7 @@
   <link href="http://jiangmmh.github.io/atom.xml" rel="self"/>
   
   <link href="http://jiangmmh.github.io/"/>
-  <updated>2023-11-04T10:04:07.620Z</updated>
+  <updated>2023-11-04T11:04:43.939Z</updated>
   <id>http://jiangmmh.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>使用hexo搭建个人博客并托管到githubpage(未完)</title>
+    <title>使用hexo搭建个人博客并托管到githubpage</title>
     <link href="http://jiangmmh.github.io/2023/11/03/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E6%89%98%E7%AE%A1%E5%88%B0githubpage/"/>
     <id>http://jiangmmh.github.io/2023/11/03/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E6%89%98%E7%AE%A1%E5%88%B0githubpage/</id>
     <published>2023-11-03T01:32:11.000Z</published>
-    <updated>2023-11-04T10:04:07.620Z</updated>
+    <updated>2023-11-04T11:04:43.939Z</updated>
     
     <content type="html"><![CDATA[<h3 id="为什么要搭建一个个人博客"><a href="#为什么要搭建一个个人博客" class="headerlink" title="为什么要搭建一个个人博客"></a>为什么要搭建一个个人博客</h3><p>首先，我希望有一个属于自己的内容发布载体，来记录自己所学、所思、所遇和所感，不知多年后回看当时的文字会是何种感受，let we see.<br>其次呢，自己的一些不成熟的文字并不适合传播给大众，因此相比知乎、CSDN的等平台，一个相对私密的个人博客显然是更好的选择。</p><h3 id="Hexo搭建静态博客"><a href="#Hexo搭建静态博客" class="headerlink" title="Hexo搭建静态博客"></a>Hexo搭建静态博客</h3><p>首先安装<code>node.js</code>, <code>git</code>。<br>Hexo是一个简单但功能强大的静态博客框架，首先安装 <a href="https://hexo.io/">Hexo</a> ，这里需要使用<a href="https://www.npmjs.com/">npm</a>。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ npm install hexo</span><br></pre></td></tr></table></figure><p>创建一个静态博客：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br><span class="line">$ cd &lt;folder&gt;</span><br></pre></td></tr></table></figure><p>文件结构为：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- scaffolds： 文本模板文件</span><br><span class="line">- source：博文等资源文件</span><br><span class="line">- themes：主题文件</span><br><span class="line">- _config.yml：站点配置文件</span><br><span class="line">- package.json：应用数据</span><br></pre></td></tr></table></figure><p>选择自己喜欢的主题安装：<a href="https://hexo.io/themes/">Hexo主题</a>。<br>这里我选择了简洁的<a href="https://github.com/tufu9441/maupassant-hexo">maupassant</a>主题。</p><p>使用命令<code>hexo s</code>来查看主题是否配置完成。</p><p>具体hexo的配置方法见<a href="https://hexo.io//docs/">Hexo文档</a>和具体主题的文档。</p><h3 id="将静态博客部署到GithubPage"><a href="#将静态博客部署到GithubPage" class="headerlink" title="将静态博客部署到GithubPage"></a>将静态博客部署到GithubPage</h3><p>首先需要有一个Github账号，然后确保本机能使用git连接github服务器，这里需要将本机的ssh公钥上传至github，具体方法见他人博客。</p><p>创建一个新的Github仓库，仓库名必须为<code>&lt;your user name&gt;.github.io </code>，自行站点文件和该仓库的连接。配置GithubPage的详细方法见<a href="https://docs.github.com/en/pages">GithubPage文档</a>。</p><p>然后运行<code>hexo g</code>生成静态站点，<code>hexo d</code>将博客部署到GithubPage，稍等片刻就可以在浏览器中访问网址<code>&lt;github user name&gt;.github.io</code>来访问自己的博客了。</p><h3 id="一些简单的使用方法"><a href="#一些简单的使用方法" class="headerlink" title="一些简单的使用方法"></a>一些简单的使用方法</h3><blockquote><p>每次更新文本后需要使用<code>hexo g &amp; hexo d</code>来重新生成部署。</p></blockquote><p>新建博文：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;name&gt;</span><br></pre></td></tr></table></figure><p>新建page：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &lt;name&gt;</span><br></pre></td></tr></table></figure><p>该命令会在<code>source</code>目录下生成page目录和一个<code>index.md</code>，将<code>index.md</code>的header中添加<code>layout: page</code>，并填入相应的内容即可在博客上显示新的page。</p>]]></content>
     
