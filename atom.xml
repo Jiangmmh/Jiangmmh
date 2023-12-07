@@ -6,7 +6,7 @@
   <link href="http://jiangmmh.github.io/atom.xml" rel="self"/>
   
   <link href="http://jiangmmh.github.io/"/>
-  <updated>2023-11-05T06:53:24.000Z</updated>
+  <updated>2023-12-07T11:23:32.000Z</updated>
   <id>http://jiangmmh.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题三十小象</title>
+    <link href="http://jiangmmh.github.io/2023/12/07/%E9%A2%98%E4%B8%89%E5%8D%81%E5%B0%8F%E8%B1%A1/"/>
+    <id>http://jiangmmh.github.io/2023/12/07/%E9%A2%98%E4%B8%89%E5%8D%81%E5%B0%8F%E8%B1%A1/</id>
+    <published>2023-12-07T11:23:32.000Z</published>
+    <updated>2023-12-07T11:23:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>吴庆坻</p><p>食肉何曾尽虎头，卅年书剑海天秋。<br>文章幸未逢黄祖，襆被今犹窘马周。<br>自是汝才难用世，岂真吾相不当侯。<br>须知少日拏云志，曾许人间第一流。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;吴庆坻&lt;/p&gt;
+&lt;p&gt;食肉何曾尽虎头，卅年书剑海天秋。&lt;br&gt;文章幸未逢黄祖，襆被今犹窘马周。&lt;br&gt;自是汝才难用世，岂真吾相不当侯。&lt;br&gt;须知少日拏云志，曾许人间第一流。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="文化-诗词" scheme="http://jiangmmh.github.io/categories/%E6%96%87%E5%8C%96-%E8%AF%97%E8%AF%8D/"/>
+    
+    
+    <category term="诗词" scheme="http://jiangmmh.github.io/tags/%E8%AF%97%E8%AF%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>DiffusionModel梳理</title>
